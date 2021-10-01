@@ -1,0 +1,22 @@
+@use "_partial.scss";
+@use "_operators.scss";
+@use "_mixin.scss";
+@use "_inheritance.scss";
+@use "module";
+
+// Using variables
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  height: 500px;
+}
+
+// Using namespaces
+
+.inverse {
+  background-color: module.$selected-color;
+}
