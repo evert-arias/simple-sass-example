@@ -1,6 +1,6 @@
 # simple-sass-example
 
-Simple sass example
+Simple sass example with hot reload and live-server
 
 ## Getting started
 
