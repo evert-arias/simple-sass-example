@@ -4,8 +4,9 @@
   "description": "Simple Sass example",
   "main": "index.js",
   "scripts": {
-    "build": "sass assets/scss:dist",
-    "dev": "npm run build & serve"
+    "watch:sass": "node-sass -w scss -o public/css",
+    "serve": "live-server --open=public",
+    "dev": "npm-run-all --parallel serve watch:sass"
   },
   "keywords": [],
   "author": "Evert Arias",
